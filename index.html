@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwindcss and fonts -->
+    <!-- Tailwindcss and Fonts -->
     <link rel="stylesheet" href="stylesheets/tailwind.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,10 +41,37 @@
           <!-- Options -->
           <div class="mt-10 max-w-lg mx-auto">
             <span id="desc" class="text-lg text-gray-700"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos aut accusamus, ipsam iusto illum error nisi! Deserunt
-              facilis ratione nobis!
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+              beatae laboriosam, commodi quis tempore necessitatibus.
+              Voluptatibus minima aut non doloremque?
             </span>
+            <span class="text-2xl font-medium pb-2" id="price">750</span>
+            <div class="pt-10">
+              <button
+                class="
+                  p-5
+                  border border-gray-200
+                  shadow
+                  hover:shadow-lg
+                  rounded
+                "
+                id="free"
+              >
+                Free Shipping - 5$
+              </button>
+              <button
+                id="express"
+                class="
+                  p-5
+                  border border-gray-200
+                  shadow
+                  hover:shadow-lg
+                  rounded
+                "
+              >
+                Express Shipping - 30$
+              </button>
+            </div>
             <div class="flex justify-between items-center mt-40">
               <div
                 class="
@@ -54,7 +81,6 @@
                   cursor-pointer
                   hover:border-purple-600 hover:shadow-lg
                   rounded
-                  selected
                 "
                 id="first"
               >
@@ -87,6 +113,25 @@
                 <img src="images/3.jpg" class="w-20 h-20" alt="" />
               </div>
             </div>
+
+            <div class="text-2xl py-2">
+              Shipping Charge: <span id="shipping">0</span>$
+            </div>
+            <div class="text-2xl py-2">Total: <span id="total">750</span>$</div>
+            <button
+              class="
+                px-4
+                py-2
+                text-xl
+                border border-purple-200
+                mt-6
+                shadow
+                rounded
+                hover:shadow-xl
+              "
+            >
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
