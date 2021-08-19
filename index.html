@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwindcss and fonts -->
+    <link rel="stylesheet" href="stylesheets/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styling -->
+    <style>
+      body {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .selected {
+        border: 1px solid purple;
+      }
+    </style>
+    <title>Canva</title>
+  </head>
+  <body>
+    <main>
+      <div class="container mx-auto px-4 md:px-2">
+        <div class="grid grid-cols-2">
+          <!-- Image -->
+          <div class="p-5 border rounded border-gray-200 m-5">
+            <div class="h-96 w-full">
+              <img
+                src="images/1.jpg"
+                id="art"
+                class="w-full rounded h-full object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Options -->
+          <div class="mt-10 max-w-lg mx-auto">
+            <span id="desc" class="text-lg text-gray-700"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos aut accusamus, ipsam iusto illum error nisi! Deserunt
+              facilis ratione nobis!
+            </span>
+            <div class="flex justify-between items-center mt-40">
+              <div
+                class="
+                  p-5
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600 hover:shadow-lg
+                  rounded
+                  selected
+                "
+                id="first"
+              >
+                <img src="images/1.jpg" class="w-20 h-20" alt="" />
+              </div>
+              <div
+                class="
+                  p-5
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600
+                  rounded
+                "
+                id="second"
+              >
+                <img src="images/2.jpg" class="w-20 h-20" alt="" />
+              </div>
+              <div
+                class="
+                  p-5
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600
+                  rounded
+                "
+                id="third"
+              >
+                <img src="images/3.jpg" class="w-20 h-20" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Custom js -->
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
